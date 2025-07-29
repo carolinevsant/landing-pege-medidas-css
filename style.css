@@ -10,7 +10,7 @@ body.tema-claro {
   flex-direction: column;
   font-family: sans-serif;
   padding: 20px;
-  background: #fff0f3;
+  background: #ffffff;
 }
 
 body.tema-escuro {
@@ -54,7 +54,7 @@ header {
 
 .navbar {
     width: 100%;
-  background-color: #ffccd5 !important; /* Cor de fundo personalizada */
+  background-color: #284b63 !important; /* Cor de fundo personalizada */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -106,7 +106,7 @@ body.tema-escuro .logo-escura {
 .logo-clara, .logo-escura {
     width: 65px;
   height: 65px;
-  border-radius: 100%;
+  
   transition: opacity 0.3s;
 }
 
@@ -163,10 +163,11 @@ a{
     justify-content: center;
   width: 350px;
 
+
   padding: 20px;
-  background-color: #f9c9d2;
+  background-color: #ced4da;
   border-radius: 10px;
-  border: 1px solid #fb6f92;
+  border: 1px solid #1a1c3b;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -205,7 +206,7 @@ header .info{
   width: 80px;
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #ff4d6d;
+  background-color: #21253a;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 6px;
