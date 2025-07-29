@@ -1,4 +1,4 @@
-# 🧪 Site: Unidades de Medida no CSS
+# 🧪 Site: Unidades de Medida no CSS (Em processo)
 
 Este site foi desenvolvido como parte de uma prova de conceito para explorar e comparar as principais **unidades de medida do CSS**, tanto absolutas quanto relativas e de ângulo. Ele também demonstra funcionalidades práticas como troca de tema, interação com cards e uso de jQuery com Bootstrap.
 
