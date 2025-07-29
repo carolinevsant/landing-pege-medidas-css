@@ -1,0 +1,306 @@
+html{
+    max-width: 768px
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.tema-claro {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 20px;
+  background: #fff0f3;
+}
+
+body.tema-escuro {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 20px;
+
+  background-color: #0d1b2a;
+  color: white;
+}
+.alternar-tema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 40px;
+
+    border-radius: 8px;
+
+}
+
+button {
+  margin: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  z-index: 9999; /* para ficar sobre outros elementos */
+  background-color: #0e1a35; /* exemplo */
+}
+/* Estilização da NAVBAR */
+
+
+.navbar {
+    width: 100%;
+  background-color: #ffccd5 !important; /* Cor de fundo personalizada */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body.tema-escuro .navbar {
+  background-color: #1b263b !important;
+}
+
+
+.navbar-brand {
+  color: black !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #f1f1f1 !important;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f1c40f !important;
+}
+
+/* Estilo para item desabilitado (opcional) */
+.navbar-nav .nav-link.disabled {
+  color: #888 !important;
+}
+/* ------------------------------------------------*/
+.logo-clara {
+  display: inline;
+}
+
+.logo-escura {
+  display: none;
+}
+
+/* Quando o tema escuro estiver ativo */
+body.tema-escuro .logo-clara {
+  display: none;
+}
+
+body.tema-escuro .logo-escura {
+  display: inline;
+}
+
+/* Ajuste de tamanho (se quiser) */
+.logo-clara, .logo-escura {
+    width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  transition: opacity 0.3s;
+}
+
+/* ------------------------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    font-size: 26px;
+}
+
+
+.card:hover {
+  transform: scale(1.05); /* aumenta 5% */
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color:black;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 350px;
+
+  padding: 20px;
+  background-color: #f9c9d2;
+  border-radius: 10px;
+  border: 1px solid #fb6f92;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.card .info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+header .info{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.card.active .info {
+  max-height: 200px; /* ou o suficiente para o conteúdo */
+  opacity: 1;
+}
+.card-btn  {
+
+  width: 80px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff4d6d;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card-btn > a{
+    color: white;
+}
+
+body.tema-escuro .card {
+    border: 1px solid grey;
+  background-color: #231942;
+  color: #fff;
+}
+
+body.tema-escuro .card h3 {
+  color: #e0e1dd;
+}
+
+body.tema-escuro .card-btn {
+  background-color: #4db6ac;
+  color: white;
+}
+
+body.tema-escuro a {
+  color: #ffffff;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 1rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilo do botão */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Ligado */
+input:checked + .slider {
+  background-color: #0b0b0b;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.imagem-tema {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+body.tema-escuro .imagem-tema {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+@media (max-width: 480px){
+    body{
+
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+
+        padding: 40px;
+
+    }
+}
